@@ -1,0 +1,7 @@
+from datetime import datetime
+def get_days_from_today():
+    user_input = input("Input date: ")
+    date = datetime.strptime(user_input, "%Y-%M-%D")
+    current_date = datetime.now()
+    date = date - current_date
+    print(date.days)
